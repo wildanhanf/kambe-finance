@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+ 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: inline;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F8F9FA; 
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    background-color: #F8F9FA;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 4px 8px 0 #B2B8A3;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+nav a:hover {
+    font-weight: bold;    
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    width: 40%;
+    justify-content: space-between;  
+}
+
+.logo {
+    width: 250px;
+    display: inline-block;
+    padding: 20px;
+}
+
+.menu {
+    display: none;
+    
+}
+
+.menu-line {
+    width: 20px;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 4px;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1140px;
+    position: relative;
+    width: 85%;
+}
+
+.banner-desc {
+    position: relative;
+    top: 20%;
+    line-height: 1.6;
+}
+
+.box {
+    flex-wrap: wrap;
+    margin: 20px;
+    flex-grow: 1;
+}
+
+.first {
+    flex-grow: 1;
+    flex: 50%;
+}
+
+.second {
+    flex-grow: 1;
+    flex: 50%;
+}
+
+.content-text {
+    position: relative;
+    top: 40px;
+    letter-spacing: 2px;
+}
+
+.content-text p {
+    margin-bottom: 20px;
+}
+
+.content-image {
+    width: 320px;
+}
+
+.sub-content {
+    text-align: center;
+    margin: 100px auto 30px auto;
+    color: #B2B8A3;
+}
+
+.content-title {
+    margin: 20px 0;
+}
+
+.button {
+    margin: 50px auto;
+    text-decoration: none;
+}
+
+.profile table{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.profile img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+footer {
+    padding: 20px;
+    color: black;
+    background-color: #C9D8B6;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 985px) {
+    nav ul {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #content {
+        width: 100%;
+        padding: 0;
+    }
+    .container {
+        flex-direction: column;
+        
+    }
+}
+
+@media screen and (max-width: 768px ) {
+    nav ul {
+        display: none;
+    }
+}
